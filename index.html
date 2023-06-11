@@ -13,16 +13,18 @@
 </head>
 
 <body style='margin: 0; overflow: hidden;'>
-    <a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false' renderer='antialias: true; alpha: true'>
+    <a-scene vr-mode-ui="enabled: false" embedded
+        arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
+
         <a-assets>
-            <img id="picture1texture" src="os.jpg">
+            <img id="picture" src="os.jpg">
         </a-assets>
 
         <!-- <a-entity gltf-model="./assets/magnemite/scene.gltf" rotation="0 180 0" scale="0.015 0.015 0.015"
             gps-entity-place="longitude: 56.121944; latitude: 12.259328;" animation-mixer /> -->
         <!-- 56.12194495232424, 12.25932855813985 -->
 
-        <a-image id="picture1-os" src="#picture1texture" scale="1 1 1" rotation="0 90 0"
+        <a-image id="picture1-os" src="#picture" scale="1 1 1" rotation="0 90 0"
         gps-new-entity-place="longitude: 56.121859; latitude: 12.259351;" style="visibility: visible;">
             <!-- 56.12185998337172, 12.259351036394989 -->
         </a-image>
